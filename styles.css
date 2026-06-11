@@ -103,7 +103,9 @@ h1 {
   line-height: 1;
   letter-spacing: -0.05em;
   text-wrap: balance;
-  overflow-wrap: anywhere;
+  word-break: normal;
+  overflow-wrap: normal;
+  hyphens: none;
 }
 
 .hero__note {
@@ -164,7 +166,7 @@ h1 {
   }
 
   h1 {
-    font-size: clamp(1.55rem, 5.6vh, 2.65rem);
+    font-size: clamp(1.35rem, 5vh, 2.25rem);
     line-height: 1;
   }
 
