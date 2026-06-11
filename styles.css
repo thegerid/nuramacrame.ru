@@ -54,7 +54,7 @@ body::after {
 
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 100svh;
   display: grid;
   place-items: center;
   padding: 24px;
@@ -123,6 +123,35 @@ h1 {
 
   h1 {
     letter-spacing: -0.04em;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 560px) {
+  .hero {
+    padding: 12px;
+  }
+
+  .hero__card {
+    width: min(76vw, 430px);
+    min-height: calc(100svh - 24px);
+    display: grid;
+    align-content: center;
+    padding: 22px 18px;
+    border-radius: 28px;
+  }
+
+  .hero__halo {
+    width: min(70vw, 520px);
+  }
+
+  h1 {
+    font-size: clamp(1.85rem, 6.2vh, 3.15rem);
+    line-height: 1;
+  }
+
+  .hero__note {
+    margin-top: 16px;
+    font-size: 0.98rem;
   }
 }
 
